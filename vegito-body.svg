@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="806" height="598" viewBox="0 0 806 598">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07172f"/>
+      <stop offset=".28" stop-color="#123f88"/>
+      <stop offset=".52" stop-color="#071a3b"/>
+      <stop offset=".76" stop-color="#302064"/>
+      <stop offset="1" stop-color="#06142b"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7df5ff"/>
+      <stop offset=".45" stop-color="#258bff"/>
+      <stop offset="1" stop-color="#b56cff"/>
+    </linearGradient>
+    <linearGradient id="touch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06101f"/>
+      <stop offset="1" stop-color="#102b51"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Outer shell: transparent beyond the DualShock-like silhouette -->
+  <path d="M205 55
+           C166 54 132 78 111 116
+           L48 245
+           C29 285 27 339 45 388
+           L88 500
+           C100 531 127 546 153 530
+           L239 456
+           C267 434 295 424 326 424
+           L480 424
+           C511 424 539 434 567 456
+           L653 530
+           C679 546 706 531 718 500
+           L761 388
+           C779 339 777 285 758 245
+           L695 116
+           C674 78 640 54 601 55
+           C548 56 521 78 483 90
+           C433 105 373 105 323 90
+           C285 78 258 56 205 55 Z"
+        fill="url(#shell)" stroke="url(#edge)" stroke-width="7"/>
+  <!-- Fine inner contour -->
+  <path d="M205 72 C169 71 143 92 125 126 L62 250
+           C45 285 44 332 59 374 L101 483
+           C110 506 128 518 147 504 L226 437
+           C257 411 291 401 326 401 L480 401
+           C515 401 549 411 580 437 L659 504
+           C678 518 696 506 705 483 L747 374
+           C762 332 761 285 744 250 L681 126
+           C663 92 637 71 601 72"
+        fill="none" stroke="#4bdcff" stroke-opacity=".48" stroke-width="3"/>
+  <!-- Cyan energy streaks, kept away from the main button locations -->
+  <path d="M122 165 L184 125 L163 174 L211 151 L177 211"
+        fill="none" stroke="#49eaff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M684 165 L622 125 L643 174 L595 151 L629 211"
+        fill="none" stroke="#b77aff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M270 373 L300 352 L289 381 L320 365"
+        fill="none" stroke="#42cfff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M536 373 L506 352 L517 381 L486 365"
+        fill="none" stroke="#9c72ff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Touchpad bed -->
+  <rect x="279" y="116" width="248" height="145" rx="20"
+        fill="url(#touch)" stroke="#45dfff" stroke-width="4"/>
+  <rect x="289" y="126" width="228" height="125" rx="14"
+        fill="none" stroke="#a7efff" stroke-opacity=".35" stroke-width="2"/>
+  <!-- Minimal abstract fusion-energy mark -->
+  <path d="M393 151 L370 190 L397 184 L382 224 L434 174 L405 181 L420 151 Z"
+        fill="#42dfff" opacity=".9" filter="url(#glow)"/>
+  <path d="M398 155 L389 180 L407 176 L395 205"
+        fill="none" stroke="#f1fdff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Central lower detail, leaving button elements to the live overlay -->
+  <path d="M352 306 Q403 322 454 306" fill="none" stroke="#44cfff" stroke-width="3" stroke-opacity=".7"/>
+  <path d="M366 319 Q403 331 440 319" fill="none" stroke="#a879ff" stroke-width="2" stroke-opacity=".7"/>
+  <!-- Decorative small energy marks on grips -->
+  <path d="M120 420 L151 396 L139 430 L169 411" fill="none" stroke="#4edfff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M686 420 L655 396 L667 430 L637 411" fill="none" stroke="#a77aff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

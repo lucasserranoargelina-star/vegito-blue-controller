@@ -1,0 +1,49 @@
+/*
+  VEGITO BLUE — Gamepad Viewer / DualShock 4
+  Para usarlo con la skin integrada de PS4:
+  https://gamepadviewer.com/?p=1&s=5&editcss=TU_URL_PUBLICA/vegito-blue.css
+
+  IMPORTANTE:
+  - Sube este CSS y vegito-body.svg al mismo directorio público.
+  - Sustituye YOURUSERNAME por tu usuario de GitHub en la URL de abajo.
+  - Es un edit CSS: conserva la estructura y las posiciones de la skin DS4 original.
+*/
+
+.edit .controller.ds4 {
+  background: url("https://YOURUSERNAME.github.io/vegito-blue-controller/vegito-body.svg")
+              no-repeat center center !important;
+  background-size: 806px 598px !important;
+}
+
+/* Compatibilidad con las variantes de la clase .edit */
+.controller.edit {
+  background: url("https://YOURUSERNAME.github.io/vegito-blue-controller/vegito-body.svg")
+              no-repeat center center !important;
+  background-size: 806px 598px !important;
+}
+
+/* Aura fría azul/morada en las piezas de los controles */
+.edit .ds4 .face,
+.edit .ds4 .button,
+.edit .ds4 .stick,
+.edit .ds4 .bumper,
+.edit .ds4 .trigger,
+.edit .ds4 .back,
+.edit .ds4 .start,
+.edit .ds4 .meta,
+.edit .ds4 .touchpad {
+  filter: hue-rotate(155deg) saturate(1.45);
+}
+
+/* Destello cuando se pulsan los controles */
+.edit .ds4 .pressed {
+  filter: hue-rotate(155deg) saturate(1.8) brightness(1.35)
+          drop-shadow(0 0 5px #36cfff);
+}
+
+/* El cuerpo base debe seguir siendo visible al desconectar el mando */
+.edit .ds4.disconnected {
+  background: url("https://YOURUSERNAME.github.io/vegito-blue-controller/vegito-body.svg")
+              no-repeat center center !important;
+  background-size: 806px 598px !important;
+}

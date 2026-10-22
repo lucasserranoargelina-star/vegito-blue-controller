@@ -1,0 +1,35 @@
+# Vegito Blue — Gamepad Viewer (PS4)
+
+Este paquete es una personalización inicial para la skin DualShock 4 de Gamepad Viewer.
+Usa `editcss=` para mantener las posiciones/animaciones de los botones de la skin original y
+cambiar el cuerpo por una ilustración SVG.
+
+## Archivos
+- `vegito-blue.css`: reglas de personalización.
+- `vegito-body.svg`: ilustración vectorial del cuerpo del mando.
+
+## Publicarlo con GitHub Pages
+1. Crea un repositorio público llamado exactamente `vegito-blue-controller`.
+2. Sube ambos archivos a la raíz del repositorio.
+3. En Settings → Pages, selecciona Deploy from a branch, rama `main`, carpeta `/(root)`.
+4. Espera a que GitHub Pages publique el sitio.
+5. Edita `vegito-blue.css` y sustituye `YOURUSERNAME` por tu nombre de usuario de GitHub en las URL del SVG.
+6. Guarda el CSS y vuelve a subirlo. Comprueba que estas dos direcciones se abren en el navegador:
+   - `https://TUUSUARIO.github.io/vegito-blue-controller/vegito-body.svg`
+   - `https://TUUSUARIO.github.io/vegito-blue-controller/vegito-blue.css`
+
+## Cargarlo en GamePad Viewer
+1. Abre https://overlay.gamepadviewer.com/loader/index.html?p=1
+2. Conecta el mando y pulsa un botón para que lo detecte.
+3. Selecciona la skin de PS4 / DualShock 4.
+4. En `Edit CSS URL`, pega la URL pública completa de `vegito-blue.css`.
+5. Genera/copía el enlace resultante y ábrelo en una pestaña nueva.
+6. Pulsa los botones y mueve los sticks para comprobar que responden.
+
+## Si no aparece
+- Asegúrate de que las URLs públicas terminan en `.css` y `.svg` y se abren sin pedir inicio de sesión.
+- Revisa que hayas sustituido `YOURUSERNAME`.
+- Si aparece el mando original, pero no el cuerpo personalizado, revisa la URL del SVG y prueba recargar con Ctrl+F5.
+- Si el generador no aplica el CSS, confirma que usaste `Edit CSS URL`, no `Custom CSS URL`.
+
+Nota: GamePad Viewer puede cambiar su HTML/CSS con actualizaciones. Este paquete se ha preparado siguiendo los selectores documentados de la skin DS4 y debe probarse en la página publicada; no puedo garantizar el resultado hasta comprobar las URLs alojadas.

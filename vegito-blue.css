@@ -1,23 +1,12 @@
-/*
-  VEGITO BLUE — Gamepad Viewer / DualShock 4
-  Para usarlo con la skin integrada de PS4:
-  https://gamepadviewer.com/?p=1&s=5&editcss=TU_URL_PUBLICA/vegito-blue.css
-
-  IMPORTANTE:
-  - Sube este CSS y vegito-body.svg al mismo directorio público.
-  - Sustituye YOURUSERNAME por tu usuario de GitHub en la URL de abajo.
-  - Es un edit CSS: conserva la estructura y las posiciones de la skin DS4 original.
-*/
-
 .edit .controller.ds4 {
-  background: url("https://YOURUSERNAME.github.io/vegito-blue-controller/vegito-body.svg")
+  background: url("https://lucasserranoargelina-star.github.io/vegito-blue-controller/vegito-body.svg")
               no-repeat center center !important;
   background-size: 806px 598px !important;
 }
 
 /* Compatibilidad con las variantes de la clase .edit */
 .controller.edit {
-  background: url("https://YOURUSERNAME.github.io/vegito-blue-controller/vegito-body.svg")
+  background: url("https://lucasserranoargelina-star.github.io/vegito-blue-controller/vegito-body.svg")
               no-repeat center center !important;
   background-size: 806px 598px !important;
 }

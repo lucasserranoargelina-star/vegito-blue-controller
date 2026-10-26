@@ -32,7 +32,7 @@
 
 /* El cuerpo base debe seguir siendo visible al desconectar el mando */
 .edit .ds4.disconnected {
-  background: url("https://YOURUSERNAME.github.io/vegito-blue-controller/vegito-body.svg")
+  background: url("https://lucasserranoargelina-star.github.io/vegito-blue-controller/vegito-body.svg")
               no-repeat center center !important;
   background-size: 806px 598px !important;
 }
